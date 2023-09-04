@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="form.css">
-    
+
 </head>
 
 <body>
@@ -17,44 +17,54 @@
     </div>
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-lg-8">
-                
+            <div class="col-lg-6">
+
                 <form class="form" id="registrationForm" onsubmit="return validateForm();">
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Name">
+                        <input type="text" class="form-control" id="name" aria-describedby="nameHelp"
+                            placeholder="Name">
                         <div id="nameError" class="invalid-feedback">Please enter a valid name</div>
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+                        <label for="exampleInputEmail1" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                            placeholder="Email">
                         <div id="emailError" class="invalid-feedback">Enter a valid email</div>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Password</label>
                         <input type="password" class="form-control" id="password" placeholder="Password">
-                        <div id="passwordError" class="invalid-feedback">Password should be at least 8 characters long while containing a lowercase letter, an uppercase letter, a number, and a special character</div>
-                    </div>                    
+                        <div id="passwordError" class="invalid-feedback">Password should be at least 8 characters long
+                            while containing a lowercase letter, an uppercase letter, a number, and a special character
+                        </div>
+                    </div>
                     <div class="mb-3">
                         <label for="exampleInputConfirmPassword" class="form-label">Confirm Password</label>
                         <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
                         <div id="confirmPasswordError" class="invalid-feedback">Password doesn't match</div>
-                    </div>                    
+                    </div>
                     <div class="mb-3">
                         <label for="exampleInputDOB" class="form-label">Date of Birth</label>
                         <input type="date" class="form-control" id="dob" aria-describedby="dobHelp">
                         <div id="dobError" class="invalid-feedback">Age should be at least 18</div>
-                    </div>                    
+                    </div>
                     <div><label id="edit">
-                        <input type="checkbox" name="checkbox">
-                        I accept the <a href="#">Terms of use</a> & <a href="#">Privacy Policy</a>
-                    </label></div>
+                            <input type="checkbox" name="checkbox">
+                            I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>
+                        </label></div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
     </div>
-    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalMessage">Enter valid input(s)</p>
+        </div>
+    </div>
+
     <br><br>
 
     <script>
@@ -62,55 +72,55 @@
             var emailInput = document.getElementById("email").value;
             var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             var emailField = document.getElementById("email");
-            var emailError = document.getElementById("emailError"); // Get the error message element
-        
+            var emailError = document.getElementById("emailError");
+
             if (emailPattern.test(emailInput)) {
                 emailField.classList.remove("is-invalid");
                 emailField.classList.add("is-valid");
-                emailError.style.display = "none"; // Hide the error message
+                emailError.style.display = "none";
             } else {
                 emailField.classList.remove("is-valid");
                 emailField.classList.add("is-invalid");
-                emailError.style.display = "block"; // Show the error message
+                emailError.style.display = "block";
             }
         }
-        
+
 
         function validateName() {
             var nameInput = document.getElementById("name").value;
             var namePattern = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
             var nameField = document.getElementById("name");
-            var nameError = document.getElementById("nameError"); // Get the error message element
-        
+            var nameError = document.getElementById("nameError");
+
             if (namePattern.test(nameInput)) {
                 nameField.classList.remove("is-invalid");
                 nameField.classList.add("is-valid");
-                nameError.style.display = "none"; // Hide the error message
+                nameError.style.display = "none";
             } else {
                 nameField.classList.remove("is-valid");
                 nameField.classList.add("is-invalid");
-                nameError.style.display = "block"; // Show the error message
+                nameError.style.display = "block";
             }
         }
-        
+
 
         function validatePassword() {
             var passwordInput = document.getElementById("password").value;
             var passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
             var passwordField = document.getElementById("password");
-            var passwordError = document.getElementById("passwordError"); // Get the error message element
-        
+            var passwordError = document.getElementById("passwordError");
+
             if (passwordPattern.test(passwordInput)) {
                 passwordField.classList.remove("is-invalid");
                 passwordField.classList.add("is-valid");
-                passwordError.style.display = "none"; // Hide the error message
+                passwordError.style.display = "none";
             } else {
                 passwordField.classList.remove("is-valid");
                 passwordField.classList.add("is-invalid");
-                passwordError.style.display = "block"; // Show the error message
+                passwordError.style.display = "block";
             }
             validateConfirmPassword();
-        }        
+        }
 
         function validateDateOfBirth() {
             var dobInput = document.getElementById("dob").value;
@@ -118,8 +128,8 @@
             var today = new Date();
             var dobDate = new Date(dobInput);
             var dobField = document.getElementById("dob");
-            var dobError = document.getElementById("dobError"); // Get the error message element
-        
+            var dobError = document.getElementById("dobError");
+
             if (
                 dobPattern.test(dobInput) &&
                 dobDate <= today &&
@@ -127,30 +137,30 @@
             ) {
                 dobField.classList.remove("is-invalid");
                 dobField.classList.add("is-valid");
-                dobError.style.display = "none"; // Hide the error message
+                dobError.style.display = "none";
             } else {
                 dobField.classList.remove("is-valid");
                 dobField.classList.add("is-invalid");
-                dobError.style.display = "block"; // Show the error message
+                dobError.style.display = "block";
             }
-        }        
+        }
 
         function validateConfirmPassword() {
             var password = document.getElementById("password").value;
             var confirmPassword = document.getElementById("confirmPassword").value;
             var confirmPasswordField = document.getElementById("confirmPassword");
-            var confirmPasswordError = document.getElementById("confirmPasswordError"); // Get the error message element
-        
+            var confirmPasswordError = document.getElementById("confirmPasswordError");
+
             if (password === confirmPassword && password.length > 0) {
                 confirmPasswordField.classList.remove("is-invalid");
                 confirmPasswordField.classList.add("is-valid");
-                confirmPasswordError.style.display = "none"; // Hide the error message
+                confirmPasswordError.style.display = "none";
             } else {
                 confirmPasswordField.classList.remove("is-valid");
                 confirmPasswordField.classList.add("is-invalid");
-                confirmPasswordError.style.display = "block"; // Show the error message
+                confirmPasswordError.style.display = "block";
             }
-        }        
+        }
 
         function validateForm() {
             validateEmail();
@@ -158,14 +168,23 @@
             validatePassword();
             validateDateOfBirth();
             validateConfirmPassword();
-            
+
             var invalidInputs = document.querySelectorAll('.is-invalid');
-            
+
             if (invalidInputs.length > 0) {
-                alert("Enter Valid Input(s)");
+
+                var modal = document.getElementById("myModal");
+                var modalMessage = document.getElementById("modalMessage");
+                modal.style.display = "block";
+                modalMessage.innerHTML = "Enter valid input(s)";
+                var closeBtn = document.getElementsByClassName("close")[0];
+                closeBtn.onclick = function () {
+                    modal.style.display = "none";
+                }
+
                 return false;
             }
-
+            
             return true;
         }
 
