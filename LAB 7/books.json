@@ -1,0 +1,250 @@
+[
+    {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald"
+    },
+    {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee"
+    },
+    {
+        "title": "1984",
+        "author": "George Orwell"
+    },
+    {
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen"
+    },
+    {
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger"
+    },
+    {
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien"
+    },
+    {
+        "title": "Moby-Dick",
+        "author": "Herman Melville"
+    },
+    {
+        "title": "War and Peace",
+        "author": "Leo Tolstoy"
+    },
+    {
+        "title": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien"
+    },
+    {
+        "title": "The Great Expectations",
+        "author": "Charles Dickens"
+    },
+    {
+        "title": "The Odyssey",
+        "author": "Homer"
+    },
+    {
+        "title": "The Alchemist",
+        "author": "Paulo Coelho"
+    },
+    {
+        "title": "One Hundred Years of Solitude",
+        "author": "Gabriel García Márquez"
+    },
+    {
+        "title": "The Road",
+        "author": "Cormac McCarthy"
+    },
+    {
+        "title": "To the Lighthouse",
+        "author": "Virginia Woolf"
+    },
+    {
+        "title": "The Picture of Dorian Gray",
+        "author": "Oscar Wilde"
+    },
+    {
+        "title": "Brave New World",
+        "author": "Aldous Huxley"
+    },
+    {
+        "title": "The Grapes of Wrath",
+        "author": "John Steinbeck"
+    },
+    {
+        "title": "The Adventures of Sherlock Holmes",
+        "author": "Arthur Conan Doyle"
+    },
+    {
+        "title": "Crime and Punishment",
+        "author": "Fyodor Dostoevsky"
+    },
+    {
+        "title": "The Shining",
+        "author": "Stephen King"
+    },
+    {
+        "title": "The Hunger Games",
+        "author": "Suzanne Collins"
+    },
+    {
+        "title": "The Da Vinci Code",
+        "author": "Dan Brown"
+    },
+    {
+        "title": "The Road Less Traveled",
+        "author": "M. Scott Peck"
+    },
+    {
+        "title": "The Secret Garden",
+        "author": "Frances Hodgson Burnett"
+    },
+    {
+        "title": "The Art of War",
+        "author": "Sun Tzu"
+    },
+    {
+        "title": "The Girl with the Dragon Tattoo",
+        "author": "Stieg Larsson"
+    },
+    {
+        "title": "The Fault in Our Stars",
+        "author": "John Green"
+    },
+    {
+        "title": "The Giver",
+        "author": "Lois Lowry"
+    },
+    {
+        "title": "The Martian",
+        "author": "Andy Weir"
+    },
+    {
+        "title": "The Sun Also Rises",
+        "author": "Ernest Hemingway"
+    },
+    {
+        "title": "The Stranger",
+        "author": "Albert Camus"
+    },
+    {
+        "title": "The Road to Serfdom",
+        "author": "Friedrich Hayek"
+    },
+    {
+        "title": "The Wind in the Willows",
+        "author": "Kenneth Grahame"
+    },
+    {
+        "title": "The Stand",
+        "author": "Stephen King"
+    },
+    {
+        "title": "The Brothers Karamazov",
+        "author": "Fyodor Dostoevsky"
+    },
+    {
+        "title": "The Old Man and the Sea",
+        "author": "Ernest Hemingway"
+    },
+    {
+        "title": "The Silmarillion",
+        "author": "J.R.R. Tolkien"
+    },
+    {
+        "title": "The Divine Comedy",
+        "author": "Dante Alighieri"
+    },
+    {
+        "title": "The Road to Wigan Pier",
+        "author": "George Orwell"
+    },
+    {
+        "title": "The Stand",
+        "author": "Stephen King"
+    },
+    {
+        "title": "The Brothers Karamazov",
+        "author": "Fyodor Dostoevsky"
+    },
+    {
+        "title": "The Old Man and the Sea",
+        "author": "Ernest Hemingway"
+    },
+    {
+        "title": "The Silmarillion",
+        "author": "J.R.R. Tolkien"
+    },
+    {
+        "title": "The Divine Comedy",
+        "author": "Dante Alighieri"
+    },
+    {
+        "title": "The Road to Wigan Pier",
+        "author": "George Orwell"
+    },
+    {
+        "title": "The Stand",
+        "author": "Stephen King"
+    },
+    {
+        "title": "The Brothers Karamazov",
+        "author": "Fyodor Dostoevsky"
+    },
+    {
+        "title": "The Old Man and the Sea",
+        "author": "Ernest Hemingway"
+    },
+    {
+        "title": "The Silmarillion",
+        "author": "J.R.R. Tolkien"
+    },
+    {
+        "title": "The Divine Comedy",
+        "author": "Dante Alighieri"
+    },
+    {
+        "title": "The Road to Wigan Pier",
+        "author": "George Orwell"
+    },
+    {
+        "title": "The Stand",
+        "author": "Stephen King"
+    },
+    {
+        "title": "The Brothers Karamazov",
+        "author": "Fyodor Dostoevsky"
+    },
+    {
+        "title": "The Old Man and the Sea",
+        "author": "Ernest Hemingway"
+    },
+    {
+        "title": "The Silmarillion",
+        "author": "J.R.R. Tolkien"
+    },
+    {
+        "title": "The Divine Comedy",
+        "author": "Dante Alighieri"
+    },
+    {
+        "title": "The Road to Wigan Pier",
+        "author": "George Orwell"
+    },
+    {
+        "title": "The Stand",
+        "author": "Stephen King"
+    },
+    {
+        "title": "The Brothers Karamazov",
+        "author": "Fyodor Dostoevsky"
+    },
+    {
+        "title": "The Old Man and the Sea",
+        "author": "Ernest Hemingway"
+    },
+    {
+        "title": "The Silmarillion",
+        "author": "J.R.R. Tolkien"
+    }
+]
